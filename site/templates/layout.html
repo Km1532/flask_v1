@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="../static/ccs/style.css">
+
+    {%block title %}
+        {%if  title %}
+        <title>Flack - {{title}}</title>
+        {% else %}
+    <title>Rokcolana Blog</title>
+    {% endif %}
+    {% endblock title %}
+</head>
+<body>
+<div class="wrapper">
+
+{% block menu %}
+<header class="header">
+<div class="logo">
+    <img src="{{ url_for('static', filename='img/logo2.png') }}" alt="foto">
+</div>
+
+   <ul class="main_menu">
+       <li><a href="#"><p>Головне</p></a></li>
+       <li><a href="#"><p>Блог</p></a></li>
+       <li><a href="#"><p>Реєстрація</p></a></li>
+       <li><a href="#"><p>Логін</p></a></li>
+       <li><a href="#"><p>Акаунт</p></a></li>
+       <li><a href="#"><p>Про автора</p></a></li>
+       <li><a href="#"><p>Вихід</p></a></li>
+   </ul>
+
+
+
+</header>
+{% endblock menu %}
+
+{% block content %}
+
+{% endblock content %}
+
+{% block main_page %}
+
+   <div class="content">
+
+
+
+   </div>
+
+
+
+{% endblock main_page %}
+
+{% block footer %}
+
+    <footer class="footer">Всі права захищені!<br>
+     &#169; Пашко Роксолана 2023
+    </footer>
+
+{% endblock footer %}
+
+
+</div>
+</body>
+</html>
